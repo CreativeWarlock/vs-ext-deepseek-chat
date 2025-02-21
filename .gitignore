@@ -1,0 +1,35 @@
+.DS_Store
+node_modules
+/dist
+build
+gts-backend
+gts-client
+gts-common
+gts-shared-models
+
+# local env files
+.env
+*.env
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+package-lock.json
+.firebase/*.cache
+.VSCodeCounter
+
+gts-backend/_dumps
+/logs
