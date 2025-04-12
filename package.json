@@ -1,7 +1,12 @@
 {
 	"name": "vs-ext-deepseek-chat",
+	"author": {
+		"name": "Marcel Fitzner",
+		"email": "info@get-set-alerts.com",
+		"url": "http://www.get-set-alerts.com"
+	},
 	"displayName": "vs-ext-deepseek-chat",
-	"description": "",
+	"description": "Chat with local DeepSeek-R1",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.96.0"
@@ -20,7 +25,12 @@
 		]
 	},
 	"scripts": {
+		"wp_compile": "webpack --mode development",
+		"wp_watch": "webpack --mode development --watch",
+		"wp_package": "webpack --mode production --devtool hidden-source-map",
+		"check-types": "tsc --noEmit",
 		"compile": "npm run check-types && node esbuild.js",
+		"compile-tests": "tsc -p . --outDir out",
 		"compile_tsc": "tsc -p ./",
 		"lint": "eslint src",
 		"package": "npm run check-types && node esbuild.js --production",
@@ -43,6 +53,7 @@
 		"esbuild": "^0.25.2",
 		"eslint": "^9.16.0",
 		"npm-run-all": "^4.1.5",
+		"ts-loader": "^9.5.2",
 		"typescript": "^5.7.2",
 		"webpack": "^5.99.5",
 		"webpack-cli": "^6.0.1"
