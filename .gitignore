@@ -33,3 +33,4 @@ package-lock.json
 
 gts-backend/_dumps
 /logs
+.aider*
